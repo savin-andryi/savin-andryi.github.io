@@ -1,0 +1,36 @@
+.about-text-control {
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.is-initial {
+  line-height: 1;
+  color: grey;
+  font-weight: bold;
+  font-size: 36px;
+  float: left;
+  margin: 0 5px 0 0;
+}
+
+.is-quote {
+  font-size: 72px;
+  font-weight: normal;
+}
+
+.is-text-quote {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.about-multiple-text-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.is-double-columns {
+  width: 315px;
+}
+
+.is-triple-columns {
+  width: 215px;
+}

@@ -1,0 +1,36 @@
+.about-alert-text-control {
+  border: 1px solid;
+  padding: 25px 0;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 18px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.is-alert-green {
+  border-color: #98c601;
+  color: #a3cd17;
+  background: #effeb9;
+}
+
+.is-alert-red {
+  border-color: #eb5439;
+  color: #ed624a;
+  background: #fbcbc1;
+}
+
+.is-alert-yellow {
+  border-color: #fab418;
+  color: #fab418;
+  background: #ffe9ad;
+}
+
+.is-alert-blue {
+  border-color: #4d8fcb;
+  color: #4d8fcb;
+  background: #d1e4f3;
+}

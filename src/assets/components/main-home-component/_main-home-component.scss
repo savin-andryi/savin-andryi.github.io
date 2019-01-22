@@ -1,0 +1,131 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+$home-header-text-color: #ffffff;
+
+.main-home-component-wrapper {
+  @include bottom-border(4px, $border-color);
+  padding-bottom: 50px;
+}
+
+.home-header-wrapper {
+  @include bottom-border(4px, $border-color);
+  background: url(#{$images-path}/header_bg.png);
+  padding-bottom: 80px;
+}
+
+.content-align {
+  width: $content-width;
+  margin: 0 auto;
+}
+
+.button-reset {
+  margin: 0;
+}
+
+.home-header {
+  color: $home-header-text-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.is-home-header-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.home-header-text {
+  margin-bottom: 25px;
+}
+
+.home-header-left-side {
+  width: 360px;
+}
+
+.home-header-right-side {
+  width: 540px;
+}
+
+.home-short-describe-wrapper {
+  top: -65px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.short-describe-item {
+  position: relative;
+  width: $aside-width;
+  padding: 25px;
+  background: white;
+  &:before {
+    content: "";
+    background-image: url(#{$images-path}/separator_sprites.png);
+    width: 5px;
+    height: 187px;
+    background-position: -36px -10px;
+    position: absolute;
+    left: -5px;
+    top: 65px;
+  }
+  &:after {
+    content: "";
+    background-image: url(#{$images-path}/separator_sprites.png);
+    width: 6px;
+    height: 190px;
+    background-position: -10px -10px;
+    position: absolute;
+    top: 65px;
+    right: -6px;
+  }
+}
+
+.short-describe-header {
+  font-size: 15px;
+  margin-bottom: 25px;
+  letter-spacing: -0.2px;
+}
+
+.first-describe-paragraph {
+  color: #8e8e8e;
+  margin-bottom: 12px;
+}
+
+.second-describe-paragraph {
+  margin-bottom: 30px;
+}
+
+.is-short-describe-border {
+  margin-bottom: 15px;
+}
+
+.is-short-describe-link {
+  font-weight: bold;
+  color: #333333;
+}
+
+.subheader-description-text {
+  width: 170px;
+}
+
+.subheader-description-image-wrapper {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.home-image-container {
+  position: relative;
+}
+
+.is-image-switchers {
+  position: relative;
+  top: 15px;
+}
+
+.home-slider-switchers-container {
+  display: flex;
+  justify-content: flex-end;
+}

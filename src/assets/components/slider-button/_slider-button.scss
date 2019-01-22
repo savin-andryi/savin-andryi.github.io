@@ -1,0 +1,26 @@
+.slider-button-control {
+  width: 23px;
+  height: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  + .slider-button-control {
+    margin-left: 7px;
+  }
+}
+
+.is-active-home-slider-button {
+  background-color: #bebebe;
+}
+
+.is-home-slider-button {
+  background-color: #888888;
+}
+
+.is-active-portfolio-slider-button {
+  background-color: #dcdcdc;
+}
+
+.is-portfolio-slider-button {
+  background-color: #bababa;
+}

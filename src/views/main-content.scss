@@ -1,0 +1,65 @@
+@import "../assets/scss/variables";
+@import "../assets/scss/mixins";
+
+//overall
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: $header-footer-text-color;
+}
+body {
+  font-family: HelveticaNeueCyr;
+  font-size: $main-font-size;
+}
+.title {
+  margin-bottom: 10px;
+  font-size: $main-title-font-size;
+}
+.list-control {
+  @include list-reset();
+}
+.list-elem-control {
+  margin-bottom: 5px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.article-list-link {
+  color: $main-text-color;
+}
+.bottom-border {
+  height: 6px;
+  background: url("/img/bot-underline.png");
+  margin-bottom: 20px;
+}
+
+//main
+
+.menu-and-form-container {
+  display: flex;
+  align-items: center;
+}
+.archives-section {
+  max-width: $section-width;
+}
+.archives-list {
+  display: flex;
+  justify-content: space-between;
+}
+.archives-right-column {
+  width: 40%;
+}
+.form-container {
+  width: 440px;
+}
+.aside-component {
+  max-width: $aside-width;
+}
+.portfolio {
+  width: 100%;
+}

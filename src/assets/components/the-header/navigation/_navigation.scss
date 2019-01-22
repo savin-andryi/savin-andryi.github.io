@@ -1,0 +1,33 @@
+@import "../../../scss/variables";
+
+.menu-item {
+  display: inline-block;
+  padding: 0 15px;
+  position: relative;
+  &:after {
+    content: "";
+    background-image: url(#{$images-path}/separator_sprites.png);
+    width: 2px;
+    height: 29px;
+    background-position: -61px -64px;
+    position: absolute;
+    bottom: -8px;
+    right: -1px;
+  }
+}
+
+.menu-item-holder {
+  font-weight: bold;
+  padding: 10px;
+  &:hover {
+    background: $menu-hover-background;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 20px 2px rgba(0, 0, 0, 0.75);
+  }
+}
+
+.router-link-exact-active {
+  background: $menu-hover-background;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 20px 2px rgba(0, 0, 0, 0.75);
+}

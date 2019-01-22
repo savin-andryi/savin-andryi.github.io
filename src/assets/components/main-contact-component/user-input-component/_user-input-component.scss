@@ -1,0 +1,33 @@
+@import "../../../scss/variables";
+
+.contact-form-control {
+  width: 290px;
+  padding: 10px;
+  border: 1px solid $form-border-color;
+  border-radius: 5px;
+  box-shadow: inset 0px 2px 4px -2px rgba(0, 0, 0, 0.55);
+  outline: none;
+  margin-bottom: 15px;
+  font-family: inherit;
+  font-size: inherit;
+  color: $form-text-color;
+  &::placeholder {
+    color: $form-text-color;
+  }
+  &:focus {
+    border: 1px solid $form-border-color;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.is-submit-button {
+  font-weight: bold;
+  color: white;
+  width: 90px;
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
+  background: linear-gradient(to bottom, rgba(193, 193, 193, 0.13) 0%, rgba(187, 188, 188, 0.76) 3%, rgba(182, 183, 183, 0.98) 6%, rgba(176, 177, 177, 1) 9%, rgba(179, 180, 180, 1) 11%, rgba(176, 177, 177, 1) 14%, rgba(179, 179, 179, 1) 17%, rgba(176, 176, 177, 1) 26%, rgba(170, 172, 172, 1) 31%, rgba(175, 175, 175, 1) 34%, rgba(170, 170, 171, 1) 37%, rgba(173, 173, 174, 1) 40%, rgba(169, 169, 169, 1) 51%, rgba(164, 165, 165, 1) 54%, rgba(167, 169, 169, 1) 57%, rgba(164, 165, 165, 1) 60%, rgba(168, 168, 168, 1) 63%, rgba(165, 165, 166, 1) 66%, rgba(163, 163, 163, 1) 74%, rgba(159, 160, 160, 1) 77%, rgba(163, 163, 163, 1) 80%, rgba(158, 159, 159, 1) 83%, rgba(159, 159, 159, 1) 89%, rgba(156, 157, 157, 0.99) 91%, rgba(145, 146, 147, 0.83) 94%, rgba(139, 139, 139, 0.28) 97%, rgba(135, 136, 136, 0) 100%);
+}

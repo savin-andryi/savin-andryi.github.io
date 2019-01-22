@@ -1,0 +1,32 @@
+@import "../../scss/variables";
+
+.copy-left-side {
+  display: flex;
+  justify-content: space-between;
+  width: 430px;
+}
+
+.footer-image-container {
+  position: relative;
+  &:after {
+    content: "";
+    background-image: url(#{$images-path}/separator_sprites.png);
+    width: 2px;
+    height: 34px;
+    background-position: -61px -10px;
+    position: absolute;
+    right: -10px;
+  }
+}
+
+.copy-right-side {
+  max-width: $footer-block-width;
+}
+
+.copyrights-contacts {
+  max-width: 290px;
+}
+
+.copyrights-text {
+  line-height: 1.5;
+}

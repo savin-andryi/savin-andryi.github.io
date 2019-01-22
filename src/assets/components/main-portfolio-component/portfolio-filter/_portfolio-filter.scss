@@ -1,0 +1,36 @@
+@import "../../../scss/variables";
+
+.portfolio-filter-container {
+  margin-bottom: 40px;
+}
+
+.portfolio-filter-item {
+  display: inline-block;
+  position: relative;
+  margin-right: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  &:last-child {
+    &:after {
+      content: none;
+    }
+  }
+  &:after {
+    content: "";
+    background-image: url(#{$images-path}/separator_sprites.png);
+    width: 2px;
+    height: 24px;
+    background-position: -61px -113px;
+    position: absolute;
+    right: -17px;
+    top: -4px;
+  }
+  &:hover {
+    color: $portfolio-filter-hover-color;
+  }
+}
+
+.active {
+  color: $portfolio-filter-hover-color;
+}

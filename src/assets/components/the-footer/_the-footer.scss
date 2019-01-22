@@ -1,0 +1,27 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.portfolio-footer {
+  max-width: 230px;
+}
+
+.is-recent-posts {
+  margin-bottom: 15px;
+}
+
+.flickr-image-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flickr-image-control {
+  margin: 0 5px 10px;
+}
+
+.is-footer {
+  font-size: $footer-title-font-size;
+  padding-bottom: 15px;
+  margin-bottom: 23px;
+  @include bottom-border(1px, $footer-title-bot-border-color);
+}

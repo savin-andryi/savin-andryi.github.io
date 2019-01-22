@@ -1,0 +1,36 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.header-component {
+  padding: 25px 5px;
+  background: url(#{$images-path}/header_bg.png);
+}
+
+.main {
+  color: $main-text-color;
+  padding: 30px 0 60px;
+  @include bottom-border(4px, $border-color);
+  border-top: 4px solid $border-color;
+}
+
+.footer {
+  padding: 40px 0;
+  background: url(#{$images-path}/header_bg.png);
+}
+
+.copyrights {
+  color: $copyrights-text-color;
+  background: url(#{$images-path}/copyrights_bg.png);
+  padding: 20px 5px;
+}
+
+.content-wrapper {
+  max-width: $content-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.is-about {
+  padding-bottom: 30px;
+}
